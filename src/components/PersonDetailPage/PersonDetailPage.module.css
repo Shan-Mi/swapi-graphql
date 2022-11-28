@@ -1,0 +1,29 @@
+.producersWrapper > ul {
+  list-style-type: none;
+  padding: unset;
+  text-align: center;
+}
+
+.producersWrapper > ul[title]::before {
+  content: attr(title);
+  display: block;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 50px;
+}
+
+.button {
+  padding: 10px 20px;
+}
+
+@media (hover: hover) {
+  .button {
+    cursor: pointer;
+  }
+}

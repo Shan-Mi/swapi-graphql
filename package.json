@@ -1,0 +1,31 @@
+{
+  "name": "frontend-code-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "ts:check": "tsc",
+    "codegen": "DEBUG=1 graphql-codegen --config codegen.yml",
+    "download-schema": "get-graphql-schema https://swapi-graphql.netlify.app/.netlify/functions/index > schema.graphql"
+  },
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "urql": "^3.0.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.13.7",
+    "@graphql-codegen/typescript-operations": "^2.5.4",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "get-graphql-schema": "^2.1.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}

@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+  margin: 50px;
+}
+
+.homeWrapper {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
